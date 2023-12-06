@@ -13,6 +13,8 @@ const io = new Server(server, {
 	},
 });
 
+httpServer.listen(3000);
+
 export const getRecipientSocketId = (recipientId) => {
 	return userSocketMap[recipientId];
 };
